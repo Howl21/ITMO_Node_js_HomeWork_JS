@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div>
+
+        <form action="#">
+            <fieldset>
+                <legend>Задание 1</legend>
+                <p>
+                    <label for="S_u">Площадь участка (в сотках)</label>
+                    <input type="number" id="S_u" value="10">
+                </p>
+
+                <p>
+                    <label for="kol_g">Количество грядок (в штуках)</label>
+                    <input type="number" id="kol_g" value="2">
+                </p>
+
+                <p>
+                    <label for="long_g">Длина грядки (в метрах)</label>
+                    <input type="number" id="long_g" value="15">
+                </p>
+
+                <p>
+                    <label for="width_g">Ширина грядки (в метрах)</label>
+                    <input type="number" id="width_g" value="25">
+                </p>
+                <button onclick="beds()">Посчитать</button>
+                <span id="zadanie1_result"></span>
+            </fieldset>
+        </form>
+
+
+
+        <form action="#">
+            <fieldset>
+                <legend>Задание 2</legend>
+                <p>
+                    <label for="S_oval">Площадь овала (в дм2)</label>
+                    <input type="number" id="S_oval" value="15">
+                </p>
+
+                <p>
+                    <label for="S_oval_2">Площадь вырезанного овала (в см2)</label>
+                    <input type="number" id="S_oval_2" value="600">
+                </p>
+                <button onclick="oval()">Посчитать</button>
+                <span id="zadanie2_result"></span>
+            </fieldset>
+        </form>
+
+
+        <form action="#">
+            <fieldset>
+                <legend>Задание 3</legend>
+                <p>
+                    <label for="number_1">Первое число</label>
+                    <input type="number" id="number_1" value="10">
+                </p>
+
+                <p>
+                    <label for="number_2">Второе число</label>
+                    <input type="number" id="number_2" value="23">
+                </p>
+                <p>
+                    <label for="number_3">Третье число</label>
+                    <input type="number" id="number_3" value="7">
+                </p>
+                <button onclick="numbers()">Посчитать</button>
+                <span id="zadanie3_result"></span>
+            </fieldset>
+        </form>
+
+        <form action="#">
+            <fieldset>
+                <legend>Задание 4</legend>
+                <p>
+                    <label for="t">t</label>
+                    <input type="number" id="t" value="10">
+                </p>
+
+                <p>
+                    <label for="m">m</label>
+                    <input type="number" id="m" value="23">
+                </p>
+                <p>
+                    <label for="n">n</label>
+                    <input type="number" id="n" value="7">
+                </p>
+                <button onclick="nearestNumber()">Посчитать</button>
+                <span id="zadanie4_result"></span>
+            </fieldset>
+        </form>
+
+        <form action="#">
+            <fieldset>
+                <legend>Задание 5</legend>
+                <p>
+                    <label for="C_a">Координаты а (x,y,z)</label>
+                    <input type="text" id="C_a" value="10,4,32">
+                </p>
+
+                <p>
+                    <label for="C_b">Координаты b (x,y,z)</label>
+                    <input type="text" id="C_b" value="23,11,15">
+                </p>
+                <p>
+                    <label for="C_c">Координаты c (x,y,z)</label>
+                    <input type="text" id="C_c" value="7,12,1">
+                </p>
+                <button onclick="triangle()">Посчитать</button>
+                <span id="zadanie5_result"></span>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>
