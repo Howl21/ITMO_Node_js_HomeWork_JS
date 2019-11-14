@@ -1,22 +1,20 @@
 function beds() {
     let lendArea = document.getElementById("S_u").value,
-        kolBeds = document.getElementById("kol_g").value,
         londBeds = document.getElementById("long_g").value,
         widthBeds = document.getElementById("width_g").value,
         error = false,
         lendArea_m2 = 0,
         freePlace = 0,
         result = "",
-        areaBeds = 0;
+        areaBeds = 0,
+        havePlace = true,
+        i = 0;
 
     if (lendArea <= 0) {
         alert("Некорректнрое значение для 'Площадь участка'")
         error = true;
     }
-    if (kolBeds <= 0) {
-        alert("Некорректнрое значение для 'Количество грядок'")
-        error = true;
-    }
+
     if (londBeds <= 0) {
         alert("Некорректнрое значение для 'Длина грядки'")
         error = true;
@@ -31,9 +29,19 @@ function beds() {
     }
 
     lendArea_m2 = lendArea * 100;
-    areaBeds = kolBeds * (widthBeds * londBeds);
-    freePlace = ((lendArea_m2 - areaBeds) < 0) ? 0 : lendArea_m2 - areaBeds;
-    result = (freePlace === 0) ? "К сожалению, все свободное место занято..." : "Свободного места осталось: [" + freePlace + "] метров квадратных";
+
+    while (havePlace) {
+        i++;
+        areaBeds = i * (widthBeds * londBeds);
+        freePlace = lendArea_m2 - areaBeds;
+        if ((lendArea_m2 - ((i + 1) * (widthBeds * londBeds))) < 0) {
+            havePlace = false;
+        }
+
+
+    }
+
+    result = "Можно разместить грядок: [" + i + "]. Останется свободного места: [" + freePlace + "]";
     document.getElementById("zadanie1_result").innerHTML = "Ответ: " + result;
 }
 
