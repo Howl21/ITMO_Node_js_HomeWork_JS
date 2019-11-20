@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.Ex {
+    display: inline-block;
+    margin: 10px;
+}
+
+#playZoneContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+}
+
+#playZoneContainer>p {
+    margin: 1px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
