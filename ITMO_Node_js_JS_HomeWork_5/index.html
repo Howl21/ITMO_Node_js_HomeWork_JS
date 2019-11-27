@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Задание 1</legend>
+            <label for="arr_1">Введите элементы первого массива через пробел</label>
+            <input type="text" id="arr_1">
+            <label for="arr_2">Введите элементы второго массива через пробел</label>
+            <input type="text" id="arr_2">
+            <button onclick=task_1()>Сравнить массивы</button>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <fieldset>
+            <legend>Задание 2</legend>
+            <div style="display: grid; padding: 5px; width: 25%;">
+                <label for="begin">Начальное значение</label>
+                <input type="number" id="begin">
+                <label for="end">Конечное значение</label>
+                <input type="number" id="end">
+                <label for="steep">Шаг</label>
+                <input type="number" id="steep">
+            </div>
+            <button onclick=range()>Получить массив</button>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <fieldset>
+            <legend>Задание 3</legend>
+            <div style="display: grid; padding: 5px; width: 30%;">
+                <label for="name">Имя</label>
+                <input type="text" id="name">
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname">
+                <label for="age">Возраст</label>
+                <input type="number" id="age">
+                <label for="interests">Интересы (через запятую)</label>
+                <input type="text" id="interests">
+                <label for="schl">Место обучения</label>
+                <input type="text" id="schl">
+            </div>
+            <button onclick=task_3()>Получить массив</button>
+        </fieldset>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
