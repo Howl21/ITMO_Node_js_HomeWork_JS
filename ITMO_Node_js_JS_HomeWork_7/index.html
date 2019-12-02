@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Задание 1</legend>
+            <div>
+                <div style="height: 10em;">
+                    <div style="padding-left: 25px;display: flex; font-size: 100px; justify-content: center;">
+                        <div id="hours">00</div>
+                        <div>:</div>
+                        <div id="min">00</div>
+                        <div>:</div>
+                        <div id="sec">00</div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="task_1()" style="height: 50px;width: 50px;">go</button>
+            <button onclick="task_1_stop()" style="height: 50px;width: 50px;">stop</button>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <fieldset>
+            <legend>Задание 2</legend>
+
+        </fieldset>
+    </form>
+
+
+    <form action="#">
+
+        <fieldset>
+            <legend>Задание 3</legend>
+            <div style="height: 30em;">
+                <div class="circle" id="cir_1"></div>
+                <div class="circle" id="cir_2"></div>
+                <div class="circle" id="cir_3"></div>
+            </div>
+            <button id="bTask_1" onclick="task_3()" style="height: 50px;width: 50px;">go</button>
+            <button onclick="task_3_stop()" style="height: 50px;width: 50px;">stop</button>
+        </fieldset>
+
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
