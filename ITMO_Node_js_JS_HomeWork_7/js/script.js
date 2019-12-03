@@ -59,6 +59,7 @@ function task_3() {
         topDown = true;
 
     function setColor() {
+        let delay = 2000;
         if (topDown) {
             abstractArray = arrCircles_topDown;
         } else {
@@ -70,9 +71,10 @@ function task_3() {
         if (i === abstractArray.length) {
             i = 0;
             topDown = !topDown;
+            delay = 0;
         };
         if (!stopT3) {
-            setTimeout(() => setColor(), 2000);
+            setTimeout(() => setColor(), delay);
         }
 
 
