@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.mainContainer {
+    background: brown;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+}
+
+.task1Container {
+    display: inline-block;
+    background: blue;
+    height: 10vh;
+    width: 20vh;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+
+/*#TP1 .yellow {
+    background: yellow;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+#TP1 .blue {
+    background: blue;
+    transition-property: background;
+    transition-duration: 2s;
+}
+*/
+
+#T2button {
+    width: 60vh;
+    height: 5vh;
+    font-size: larger;
+}
+
+#TP4 {
+    height: 10vh;
+    width: 20vh;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
