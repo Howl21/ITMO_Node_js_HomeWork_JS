@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="js/myLibrary.js"></script>
+    <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="task1">
+            <button onclick="task1()" id="B1">Методы массива в консоль</button>
+        </div>
+
+        <div class="task2">
+            <button onclick="task2()" id="B2">Построить график функции</button>
+            <div id="placeholder" style="height:90%; width: 100%;"></div>
+        </div>
+
+        <div class="task3" id="TP3">
+            <div class="parametrs">
+
+                <label for="n">Размер игорого поля</label>
+                <input type="number" id="n" value="4">
+                <br>
+                <label for="attempts">Попыток осталось</label>
+                <input type="text" id="attempts" value="3" min="0" disabled>
+                <button onclick="task3()" id="B3">Сгенерировать игровое поле</button>
+            </div>
+            <div class="gamePlase" id="game"></div>
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

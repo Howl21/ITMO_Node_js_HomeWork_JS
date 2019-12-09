@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    box-sizing: border-box;
+    margin: 30px;
+    height: 50px;
+    width: 200px;
+}
